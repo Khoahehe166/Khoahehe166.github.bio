@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header{
+  background: #e86b00;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ===== MENU ===== */
+nav{
+  background: #222;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.menu li{
+  position: relative;
+}
+.menu a{
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+.menu a:hover{
+  background: #e86b00;
+}
+
+/* Menu con (dropdown) */
+.submenu{
+  position: absolute;
+  display: none;
+  background: #333;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+}
+.submenu li a{
+  padding: 10px;
+  border-bottom: 1px solid #444;
+}
+.menu li:hover .submenu{
+  display: block;
+}
+
+/* ===== MAIN ===== */
+main{
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* ===== CARD ===== */
+.news{
+  display: grid;
+  gap: 20px;
+}
+.card{
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.card img{
+  width: 500px;
+  height: 250px;
+
+}
+.card h3{
+  padding: 10px;
+  color: #e86b00;
+}
+.card p{
+  padding: 0 10px 10px;
+}
+
+/* ===== FORM ===== */
+.contact-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-form input, .contact-form textarea{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form button{
+  background: #e86b00;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+.contact-form button:hover{
+  background: #f97f1b;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
