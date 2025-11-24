@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cửa hàng phụ kiện điện thoại</title>
+  <link rel="stylesheet" href="website.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">📱 Anh Khoa Store</div> 
+  </header>
+   <marquee behavior="Scroll" direction="left">
+      <p id="benner">Uy tín-Chính hãng-Chất lượng</p>
+    </marquee>
+    <!-- Menu toggle (checkbox hack) -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <nav class="nav">
+      <li><a href="#home">Trang chủ</a></li>
+      <li><a href="#products">Sản phẩm</a>
+        <ul>
+          <li><a href="">Phụ kiện</a>
+            <ul>
+             <li><a href="">Tai nghe</a>
+              <ul>
+                <li><a href="">Tai nghe dây</a></li>
+                <li><a href="">Tai nghe không dây</a></li>
+              </ul>
+             <li><a href="">Ốp điện thoại</a></li>
+             <li><a href="">Dây sạc</a>
+             <li><a href="">Kính cường lực</a>
+             </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#about">Giới thiệu</a></li>
+      <li><a href="#contact">Liên hệ</a></li>
+    </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Phụ kiện chất lượng - Giá tốt mỗi ngày!</h1>
+      <p>Ốp lưng, tai nghe, sạc, kính cường lực và nhiều hơn nữa.</p>
+      <a href="#products" class="btn">Mua ngay</a>
+    </div>
+  </section>
+
+  <!-- Sản phẩm -->
+  <section class="products" id="products">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="op.png" alt="Ốp lưng" />
+        <h3>Ốp lưng iPhone</h3>
+        <p>Giá: 150.000đ</p>
+        <button class="btn">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card">
+        <img src="airpod.png" alt="Tai nghe" />
+        <h3>Tai nghe Bluetooth</h3>
+        <p>Giá: 350.000đ</p>
+        <button class="btn">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card">
+        <img src="capsac.png" alt="Cáp sạc" />
+        <h3>Cáp sạc USB-C</h3>
+        <p>Giá: 120.000đ</p>
+        <button class="btn">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card">
+        <img src="cuongluc.png" alt="Kính cường lực" />
+        <h3>Kính cường lực</h3>
+        <p>Giá: 100.000đ</p>
+        <button class="btn">Thêm vào giỏ</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thông tin liên hệ -->
+  <section class="about" id="about">
+    <h2>Về chúng tôi</h2>
+    <p>
+      Anh Khoa Store chuyên cung cấp phụ kiện điện thoại chính hãng, 
+      chất lượng cao với giá tốt. Uy tín – Nhanh chóng – Chuyên nghiệp.
+    </p><br>
+    <p>Hotline: 0987654321</p>
+  </section>
+
+  <!-- Bảng đăng kí -->
+  <section class="contact" id="contact">
+    <h2>Liên hệ</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Họ và tên" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Nội dung" required></textarea>
+      <button type="submit" class="btn">Gửi</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Anh Khoa Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
